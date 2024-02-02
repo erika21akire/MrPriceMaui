@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MrPrice.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MrPrice"
+    Shell.FlyoutBehavior="Disabled"
+    Title="MrPrice">
+
+    <TabBar x:Name="MyTabs">
+        <Tab Title="EXPLORE" Icon="baseball_cap.png">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+        </Tab>
+        <Tab Title="SHOP" Icon="search.png">
+            <ShellContent ContentTemplate="{DataTemplate local:ShopPage}" Route="ShopPage" />
+        </Tab>
+        <Tab Title="BAG" Icon="shopping_bag.png">
+            <ShellContent ContentTemplate="{DataTemplate local:BagPage}" Route="BagPage" />
+        </Tab>
+        <Tab Title="SCAN" Icon="qr_code.png">
+            <ShellContent ContentTemplate="{DataTemplate local:ScanPage}" Route="ScanPage" />
+        </Tab>
+        <Tab Title="PROFILE" Icon="user.png">
+            <ShellContent ContentTemplate="{DataTemplate local:ProfilePage}" Route="ProfilePage" />
+        </Tab>
+    </TabBar>
+
+</Shell>
