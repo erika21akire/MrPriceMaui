@@ -40,15 +40,14 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\capicon.svg" Color="#d6071a" BaseSize="32,32" />
+		<MauiIcon Include="Resources\AppIcon\mr_price.svg" Color="#FF0000" BaseSize="5,5" />
 
 		<!-- Splash Screen -->
-			
-	  <MauiSplashScreen Include="Resources\Splash\capsplash.svg" Color="#d6071a" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\mr_price_splash.svg" Color="#FFFFFF" BaseSize="350,350" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
+		
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -58,11 +57,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\AppIcon\capicon.svg" />
+	  <None Remove="Resources\AppIcon\mr_price.svg" />
 	  <None Remove="Resources\Images\denim_home.png" />
 	  <None Remove="Resources\Images\denim_life.jpg" />
-	  <None Remove="Resources\Splash\capsplash.svg" />
-	  <None Remove="Resources\Splash\Image1.png" />
+		<None Remove="Resources\Splash\mr_price_splash.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -72,16 +70,37 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="BagPage.xaml">
+	  <Compile Update="Tabs\Fashion.xaml.cs">
+	    <DependentUpon>Fashion.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="ContentPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ProfilePage.xaml">
+	  <MauiXaml Update="Tabs\BagsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ScanPage.xaml">
+	  <MauiXaml Update="Tabs\ProfilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ShopPage.xaml">
+	  <MauiXaml Update="Tabs\ScanPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Tabs\ShopPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Tabs\Fashion.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Tabs\Home.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Tabs\Money.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Tabs\Sport.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

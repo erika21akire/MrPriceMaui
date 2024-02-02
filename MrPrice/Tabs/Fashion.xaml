@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MrPrice.Tabs.Fashion"
+             Title="Fashion">
+
+    <ScrollView Orientation="Vertical">
+        <VerticalStackLayout>
+            <ScrollView Orientation="Horizontal">
+                <HorizontalStackLayout>
+                    <Grid ColumnDefinitions="*,*"
+                          RowDefinitions="*">
+
+                        <Frame
+                            Grid.Row="0"
+                            Grid.ColumnSpan="0"
+                            WidthRequest="900"
+                            HeightRequest="350"
+                            HorizontalOptions="Start"
+                            IsClippedToBounds="True"
+                            Padding="0"
+                            Margin="16,10,0,20">
+
+                            <Image
+                            Aspect="Fill"
+                            Source="denim_home.jpg"
+                            WidthRequest="900"
+                            HeightRequest="350"/>
+                        </Frame>
+
+                        <Frame
+                            Grid.Row="0"
+                            Grid.ColumnSpan="1"
+                            WidthRequest="900"
+                            HeightRequest="350"
+                            HorizontalOptions="Start"
+                            IsClippedToBounds="True"
+                            Padding="0"
+                            Margin="16,10,0,20">
+
+                            <Image
+                            Aspect="Fill"
+                            Source="denim_life.jpg"
+                            WidthRequest="900"
+                            HeightRequest="350"/>
+                        </Frame>
+                    </Grid>  
+                       
+                   
+                
+            
+                
+            </HorizontalStackLayout>
+                        </ScrollView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
